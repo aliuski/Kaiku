@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="10dp"
+    android:columnCount="2">
+    <Button
+        android:id="@+id/button"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="Start" />
+    <Space
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="6" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="Level" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="6"
+        android:max="256" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="30 ms" />
+    <SeekBar
+        android:id="@+id/simpleSeekBar"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="6"
+        android:max="16000"
+        android:min="1000" />
+</GridLayout>
